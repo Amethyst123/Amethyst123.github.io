@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>总结 hexo 部署碰到的问题及解决方法 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="1.页面 404 问题按下图红框内容点进去从下图红框位置开始排查导致自己页面的问题(很详细) 2.页面打开之后样式出不来这里以 github 为例，如果网站在二级目录里，比如 1https://你的ID.github.io/blog 则需要将_config.yml 里的 url 修改为 1https://你的ID.github.io/blog root 修改为 1/blog 当然如果你直接用“一级">
+<meta property="og:type" content="article">
+<meta property="og:title" content="总结 hexo 部署碰到的问题及解决方法">
+<meta property="og:url" content="https://Amethyst123.github.io/Amethyst123.github.io/blog/2019/01/04/使用hexo创建个人博客中碰到的问题及解决方法/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1.页面 404 问题按下图红框内容点进去从下图红框位置开始排查导致自己页面的问题(很详细) 2.页面打开之后样式出不来这里以 github 为例，如果网站在二级目录里，比如 1https://你的ID.github.io/blog 则需要将_config.yml 里的 url 修改为 1https://你的ID.github.io/blog root 修改为 1/blog 当然如果你直接用“一级">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://amethyst123.github.io/Amethyst123.github.io/blog/2019/01/04/使用hexo创建个人博客中碰到的问题及解决方法/images/404.jpg">
+<meta property="og:image" content="https://amethyst123.github.io/Amethyst123.github.io/blog/2019/01/04/使用hexo创建个人博客中碰到的问题及解决方法/images/githubPages.jpg">
+<meta property="og:updated_time" content="2019-01-04T07:10:11.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="总结 hexo 部署碰到的问题及解决方法">
+<meta name="twitter:description" content="1.页面 404 问题按下图红框内容点进去从下图红框位置开始排查导致自己页面的问题(很详细) 2.页面打开之后样式出不来这里以 github 为例，如果网站在二级目录里，比如 1https://你的ID.github.io/blog 则需要将_config.yml 里的 url 修改为 1https://你的ID.github.io/blog root 修改为 1/blog 当然如果你直接用“一级">
+<meta name="twitter:image" content="https://amethyst123.github.io/Amethyst123.github.io/blog/2019/01/04/使用hexo创建个人博客中碰到的问题及解决方法/images/404.jpg">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://Amethyst123.github.io/Amethyst123.github.io/blog"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-使用hexo创建个人博客中碰到的问题及解决方法" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/01/04/使用hexo创建个人博客中碰到的问题及解决方法/" class="article-date">
+  <time datetime="2019-01-04T06:34:57.000Z" itemprop="datePublished">2019-01-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      总结 hexo 部署碰到的问题及解决方法
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="1-页面-404-问题"><a href="#1-页面-404-问题" class="headerlink" title="1.页面 404 问题"></a>1.页面 404 问题</h3><p>按下图红框内容点进去<br><img src="images/404.jpg" alt=""><br>从下图红框位置开始排查导致自己页面的问题(很详细)<br><img src="images/githubPages.jpg" alt=""></p>
+<h3 id="2-页面打开之后样式出不来"><a href="#2-页面打开之后样式出不来" class="headerlink" title="2.页面打开之后样式出不来"></a>2.页面打开之后样式出不来</h3><p>这里以 github 为例，如果网站在二级目录里，比如</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://你的ID.github.io/blog</span><br></pre></td></tr></table></figure>
+<p>则需要将_config.yml 里的 url 修改为</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://你的ID.github.io/blog</span><br></pre></td></tr></table></figure>
+<p>root 修改为</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/blog</span><br></pre></td></tr></table></figure>
+<p>当然如果你直接用“一级目录”的话，就像下面这样</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://你的ID.github.io</span><br></pre></td></tr></table></figure>
+<p>你会发现 github 上还是看不到你的样式，这是因为，其实这个地址本质也是二级目录，它的完整地址应该是</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://你的ID.github.io/你的ID.github.io/blog</span><br></pre></td></tr></table></figure>
+<p>此时你需要将_config.yml 里的 url 修改为</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://你的ID.github.io/blog</span><br></pre></td></tr></table></figure>
+<p>root 修改为</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/你的ID.github.io/</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://Amethyst123.github.io/Amethyst123.github.io/blog/2019/01/04/使用hexo创建个人博客中碰到的问题及解决方法/" data-id="cjqhpbhcg0004q52xmueg8d9o" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/12/31/Node-js中package-json中库的版本号详解-和-区别/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Node.js中package.json中库的版本号详解(^和~区别)</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/01/04/使用hexo创建个人博客中碰到的问题及解决方法/">总结 hexo 部署碰到的问题及解决方法</a>
+          </li>
+        
+          <li>
+            <a href="/2018/12/31/Node-js中package-json中库的版本号详解-和-区别/">Node.js中package.json中库的版本号详解(^和~区别)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/12/26/webpack核心概念/">webpack</a>
+          </li>
+        
+          <li>
+            <a href="/2018/12/25/热加载和热替换/">热加载和热替换</a>
+          </li>
+        
+          <li>
+            <a href="/2018/12/15/js和jsx的区别/">js和jsx的区别</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
